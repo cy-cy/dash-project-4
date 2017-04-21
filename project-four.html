@@ -4,12 +4,10 @@
 <link href='https://fonts.googleapis.com/css?family=Poller+One' rel='stylesheet' type='text/css'>
 <script src="js/jquery-3.2.1.js"></script>
 <style>
-
 .robot {
   position: relative;
   left: 200px;
 }
-
 .beep {
   width: 5px;
   height: 0;
@@ -19,23 +17,22 @@
   position: relative;
   left: 140px;
 }
-
 @keyframes blink {
   50% {
     background: radial-gradient(circle, red 15%, transparent 40%), #cc5;
-    width: 150px;
+    background-size: 75px 150px;
   }
 }
 @-webkit-keyframes blink {
   50% {
     background: -webkit-radial-gradient(circle, red 15%, transparent 40%), #cc5;
-    width: 150px;
+    background-size: 75px 150px;
   }
 }
 @-moz-keyframes blink {
   50% {
     background: -moz-radial-gradient(circle, red 15%, transparent 40%), #cc5;
-    width: 150px;
+    background-size: 75px 150px;
   }
 }
 .laser {
@@ -100,7 +97,6 @@
   top: -10px;
   z-index: -1;
 }
-
 @keyframes dance {
   from {
     left: 800px;
@@ -116,7 +112,6 @@
     left: 800px;
   }
 }
-
 img {
   animation: dance 4s infinite;
   -webkit-animation: dance 4s infinite;
@@ -125,7 +120,6 @@ img {
   top: 200px;
   left:400px;
 }
-
 </style>
 </head>
 
@@ -151,7 +145,6 @@ img {
 $(".flash").click(function() {
   $(".brain").toggleClass('laser');
 });
-
 // When color button is clicked...
 $(".color").click(function() {
   // assign each named color a random number 0-255
@@ -171,10 +164,8 @@ $(".color").click(function() {
   // Display the three values in an alert window
   // alert(red + "," + green + "," + blue);
 });
-
   $(".moves").click(function() {
     $("img").toggle();
   });
-
 </script>
 </body>
